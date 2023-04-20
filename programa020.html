@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Bienvenidos al local</p>
+    <hr>
+    <script>
+
+        let nombre = prompt("Ingrese el nombre de la persona: ")
+        let edad = parseInt(prompt("Ingrese la edad de la persona: "))
+        if (edad >= 18) {
+            document.write("Puede ingresar al local.")
+        } else {
+            document.write("No puede ingresar al local.")
+        }
+        document.write("<br>")
+        document.write("El nombre de la persona es: ", nombre)
+        document.write("<br>")
+        document.write("La edad de la persona es: ", edad)
+    </script>
+</body>
+
+</html>
