@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let precio = parseFloat(prompt("Ingrese el precio del prodructo: "))
+
+        if (precio >= 250) {
+            let descuento = precio * 0.10
+            let precioFnial = precio - descuento
+            document.write("<br>")
+            document.write("Se le aplica un %10 de descuento: ", +precioFnial)
+        } else {
+            let descuento = precio * 0.05
+            let precioFnial = precio - descuento
+            document.write("<br>")
+            document.write("Se la aplica un %5 de descuento: ", +precioFnial)
+        }
+        document.write("El precio final seria: ", precioFnial)
+    </script>
+</body>
+
+</html>
