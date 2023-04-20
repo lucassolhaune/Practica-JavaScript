@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let buscador = prompt("Ingrese un tipo de buscador: [GOOGLE - BING - YAHOO]")
+
+        if (buscador != "google" && buscador != "bing" && buscador != "yahoo") {
+            document.write("ERROR")
+        } else {
+            if (buscador == "google") {
+                location.href = "https://www.google.com"
+            } else {
+                if (buscador == "bing") {
+                    location.href = "https://www.bing.com"
+                } else {
+                    if (buscador == "yahoo") {
+                        location.href = "http://www.yahoo.com"
+                    }
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
