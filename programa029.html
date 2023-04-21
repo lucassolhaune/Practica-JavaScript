@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
 
         let altura = parseFloat(prompt("Ingrese la altura de una persona: "))
-        
 
-
+        if (altura > 1.90) {
+            document.write("Alta")
+            alert("Alta")
+            console.log("Alta")
+        } else {
+            if (altura >= 1.60) {
+                document.write("Normal")
+                alert("Normal")
+                console.log("Normal")
+            } else {
+                document.write("Baja")
+                console.log("Baja")
+                alert("Baja")
+            }
+        }
 
     </script>
 
-
 </body>
+
 </html>
