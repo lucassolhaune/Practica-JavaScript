@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = parseInt(prompt("Ingrese un numero de hasta tres cifras: "))
+
+        if (num < 0) {
+            document.write("ERROR-Negativo")
+        } else {
+            if (num < 10) {
+                document.write("Tiene un solo digito")
+            } else {
+                if (num < 100) {
+                    document.write("Tiene dos digitos")
+                } else {
+                    if (num < 1000) {
+                        document.write("Tiene tres digitos")
+                    } else {
+                        document.write("Tiene cuatro digitos ERROR")
+                    }
+                }
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
