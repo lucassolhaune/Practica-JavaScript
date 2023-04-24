@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let altas = 0
+        let bajas = 0
+        let x = 1 
+
+        while (x <= 10){
+            let nota =  parseInt(prompt("Ingrese diez notas: "))
+            if(nota >= 7){
+                altas = altas + 1
+            }else{
+                bajas = bajas + 1
+            }
+            x = x + 1
+        }
+        document.write("Cantidad de alumnos con notas mayores o iguales a 7: ", altas)
+        document.write("<br>")
+        document.write("Cantidad de alumnos con notas menos a 7: ", bajas)
+        
+
+
+
+
+    </script>
+</body>
+</html>
