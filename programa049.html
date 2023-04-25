@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mult3 = 0;
+      let mult5 = 0;
+
+      for (let i = 0; i <= 10; i++) {
+        let valor = parseInt(prompt("Ingrese 10 valores: "));
+        if (valor % 3 == 0) {
+          mult3++;
+        } else {
+          if (valor % 5 == 0) {
+            mult5++;
+          }
+        }
+      }
+      document.write("Los multiplos de tres son: ", mult3);
+      document.write("<hr>");
+      document.write("Los multiplos de cinco son: ", mult5);
+    </script>
+  </body>
+</html>
