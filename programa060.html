@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Cuantos triangulos se ingresaran? "));
+      let cantidad = 0;
+      for (let i = 1; i < n; i++) {
+        let base = parseInt(prompt("Ingrese la base del triangulo: "));
+        let altura = parseInt(prompt("Ingrese la altura del triangulo: "));
+        let superficie = (base * altura) / 2;
+        document.write("La superficie es: " + superficie);
+        document.write("<br>");
+        if (superficie > 12) {
+          cantidad++;
+        }
+      }
+      document.write( "La cantiad de triangulos con la superficie mayor a doce es: " +cantidad);
+    </script>
+  </body>
+</html>
