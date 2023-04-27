@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cantN = 0;
+      let cantP = 0;
+      let cantMult15 = 0;
+      let sumaPares = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        let n = parseInt(prompt("Ingrese diez numeros: "));
+        if (n >= 0) {
+          cantP++;
+        } else {
+          if (n < 0) {
+            cantN++;
+          }
+        }
+        if (n % 15 == 0) {
+          cantMult15++;
+        }
+        if (n % 2 == 0) {
+          sumaPares = sumaPares + n;
+        }
+      }
+      document.write("La cantidad de numeros positivos es: ", cantP);
+      document.write("<br>");
+      document.write("La cantidad de numeros negativos es: ", cantN);
+      document.write("<br>");
+      document.write("Los multiplos de 15 son: ", cantMult15);
+      document.write("<br>");
+      document.write("La suma de los numeros pares son:  ", sumaPares);
+    </script>
+  </body>
+</html>
