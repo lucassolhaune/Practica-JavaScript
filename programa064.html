@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cant1 = 0;
+      let cant2 = 0;
+      let cant3 = 0;
+      let n = parseInt(prompt("Cuantos triangulos va a procesar:  "));
+      for (let i = 1; i <= n; i++) {
+        let lado1 = parseInt(prompt("Ingrese primer lado:"));
+        let lado2 = parseInt(prompt("Ingrese segundo lado: "));
+        let lado3 = parseInt(prompt("Ingrese tercer lado: "));
+        if (lado1 == lado2 && lado1 == lado3) {
+          cant1++;
+        } else {
+          if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+            cant2++;
+          } else {
+            cant3++;
+          }
+        }
+      }
+      document.write("Cantidad de triangulos equilateros: " + cant1);
+      document.write("<br>");
+      document.write("Cantidad de triangulos isoceles: " + cant2);
+      document.write("<br>");
+      document.write("Cantidad de triangulos escalenos: " + cant3);
+    </script>
+  </body>
+</html>
