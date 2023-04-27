@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cont1 = 0;
+      let cont2 = 0;
+      let cont3 = 0;
+      let cont4 = 0;
+      let n = parseInt(prompt("Cuantos puntos ingresara:  "));
+      for (let i = 1; i <= n; i++) {
+        let x = parseInt(prompt("Ingrese la coordenada (x) : "));
+        let y = parseInt(prompt("Ingrese la coordenada (y): "));
+        if (x > 0 && y > 0) {
+          cont1++;
+        } else {
+          if (x < 0 && y > 0) {
+            cont2++;
+          } else {
+            if (x < 0 && y < 0) {
+              cont3++;
+            } else {
+              if (x > 0 && y < 0) {
+                cont4++;
+              }
+            }
+          }
+        }
+      }
+      document.write("Cantidad de puntos en el primer cuadrante: " + cont1);
+      document.write("<br>");
+      document.write("Cantidad de puntos en el segundo cuadrante: " + cont2);
+      document.write("<br>");
+      document.write("Cantidad de puntos en el tercer cuadrante: " + cont3);
+      document.write("<br>");
+      document.write("Cantidad de puntos en el cuarto cuadrante: " + cont4);
+    </script>
+  </body>
+</html>
