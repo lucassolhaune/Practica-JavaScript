@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let intentos = 0;
+      let clave;
+      do {
+        clave = prompt("Ingrese una clave:");
+        intentos++;
+        if (clave != "abc123") {
+          console.log("CLAVE INCORRECTA");
+        }
+      } while (intentos != 3 && clave != "abc123");
+      if (clave == "abc123") {
+        console.log("CLAVE CORRECTA");
+      } else {
+        console.log("SE LE ACABARON LOS INTENTOS");
+      }
+    </script>
+  </body>
+</html>
