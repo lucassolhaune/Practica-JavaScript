@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cantOp = 0;
+      let continua;
+      do {
+        let num1 = parseInt(prompt("Ingrese el primer numero: "));
+        let num2 = parseInt(prompt("Ingrese el segundo numero: "));
+        let suma = num1 + num2;
+        alert("La suma de los dos numeros ingresados es: " + suma);
+        cantOp++;
+        continua = parseInt(prompt("Desea realizar otra operacion: "));
+      } while (continua == "SI" || continua == "si");
+      document.write("La cantidad de operaciones efectuadas: " + cantOp);
+    </script>
+  </body>
+</html>
