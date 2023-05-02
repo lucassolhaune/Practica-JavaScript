@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Math.floor sirve para generar numeros aleatorios mulriplicado las 
+        veces que quieras -->
+    <script>
+      let pares = 0;
+      let impares = 0;
+      do {
+        num = Math.floor(Math.random() * 101);
+        if (num % 2 == 0) {
+          pares++;
+        } else {
+          impares++;
+        }
+      } while (num != 0);
+      document.write("La cantidad de numeros impares son: " + impares);
+      document.write("<br>");
+      document.write("La cantidad de numeros pares son: " + pares);
+    </script>
+  </body>
+</html>
