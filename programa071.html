@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num;
+      do {
+        num = parseInt(prompt("Ingrese un valor (0 para finalizar)"));
+        if (num != 0) {
+          if (num % 2 == 0) {
+            alert("PAR ->" + num);
+          } else {
+            alert("IMPAR ->" + num);
+          }
+        }
+      } while (num != 0);
+    </script>
+  </body>
+</html>
