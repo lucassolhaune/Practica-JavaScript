@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Formas de hacer lo mismo pero con arrays, for, etc</p>
+    <hr />
+    <script>
+      let sueldos = [1200, 750, 820, 550, 489];
+      //Para acceder a cada elemnto lo hacemos por su subindice
+      document.write(sueldos[0]);
+      document.write("<br>");
+      document.write(sueldos[1]);
+      document.write("<br>");
+      document.write(sueldos[2]);
+      document.write("<br>");
+      document.write(sueldos[3]);
+      document.write("<br>");
+      document.write(sueldos[4]);
+      document.write("<br>");
+      document.write("<hr>");
+      //Tambien podemos obtener el mismo resultado mediante un for
+      for (let indice = 0; indice < 5; indice++) {
+        document.write(sueldos[indice]);
+        document.write("<br>");
+      }
+      //Los arreglos son objetos que tienen una serie de metodos y propiedades
+      //la primer propiedad que vamos a utilizar se llama 'length'
+      //la cual informa la cantidad de elementos del arregllo propiamente dicho.
+      document.write("<hr>");
+      document.write("Cantidad de elementos del arreglo:" + sueldos.length); // con el atributo length tengo acceso a los elementos del arreglo
+      document.write("<br>");
+      //Luego lo mas comun es indicar dicha propiedad en la condicion del for
+      //podemos obtener el mismo resultado mediante un for
+      document.write("<hr>");
+      for (let indice = 0; indice < sueldos.length; indice++) {
+        document.write(sueldos[indice]);
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
