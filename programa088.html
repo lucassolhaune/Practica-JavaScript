@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+
+        let array = []
+        for(let i = 0; i < 8; i ++){
+            let elemento = parseInt(prompt("Ingrese un valor entero:"));
+            array.push(elemento)
+        }
+        for(let i = 0; i < array.length; i ++){
+            document.write(array[i]+ "-");
+        }
+        document.write("<br>");
+        let sumaTotal = 0
+        let sumaMayor36 = 0
+        let cantMayores50 = 0
+        for(let i = 0; i < array.length; i ++){
+            sumaTotal = sumaTotal + array[i];
+            if(array[i] > 36){
+                sumaMayor36 = sumaMayor36 + array[i];
+            }
+            if(array[i] > 50){
+                cantMayores50++;
+            }
+        }
+        document.write("La suma de todos los elementos del array es: "+sumaTotal)
+        document.write("<br>")
+        document.write("La suma de los elementos mayoes a 36 es: "+ sumaMayor36);
+        document.write("<br>")
+        document.write("Cantidad de valores mayores a 50 son: "+cantMayores50);
+    </script>
+</body>
+</html>
