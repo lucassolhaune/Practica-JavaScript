@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let turnoMan = []
+        let sumaMan = 0
+        for(let i = 0; i < 3; i ++){
+           let sueldo = parseFloat(prompt("Ingrese el sueldo del emplado del turno mañana"));
+            turnoMan.push(sueldo);
+            sumaMan = sumaMan + sueldo
+        }
+        let turnoTar = []
+        let sumaTar = 0
+        for(let i = 0; i < 5; i ++){
+            let sueldo = parseFloat(prompt("Ingrese el sueldo del emplado del turno tarde"));
+            turnoTar.push(sueldo);
+            sumaTar = sumaTar + sueldo;
+        }
+        for(let i = 0; i < turnoMan.length; i ++){
+            document.write(turnoMan[i]+ "-")
+        }
+        document.write("<br>")
+        document.write("Gasto en sueldos del turno mañana: "+sumaMan);
+        document.write("<hr>")
+        for(let i = 0; i < turnoTar.length; i ++){
+            document.write(turnoTar[i]+ "-")
+        }
+        document.write("<br>")
+        document.write("Gastos en sueldos del turno tarde: "+ sumaTar)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alturas = [178, 192, 165, 154, 168]
+        let suma = 0
+        for (let i = 0; i < alturas.length; i ++){
+            suma = suma + alturas[i]
+        }
+        const promedio = suma / alturas.length;
+        let altas = 0;
+        let bajas = 0;
+
+        for(let i = 0; i < alturas.length; i ++){
+            if(alturas[i]> promedio){
+                altas ++;
+            }else{
+                if(alturas[i]< promedio){
+                    bajas ++;
+                }
+            }
+        }
+        document.write("Cantidad de personas mas altas que el promedio: "+altas+"<br>");
+        document.write("Cantidad de personas mas bajas que el promedio: "+bajas+"<br>");
+        document.write("El promedio de las alturas es: "+promedio);
+    </script>
+</body>
+</html>
