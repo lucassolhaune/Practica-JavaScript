@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arreglo1 = [10, 40, 70, 4];
+        let arreglo2 = [10, 50, 10, 1];
+        let arregloSu = [];
+
+        //for para recorrer el arreglo 1 y sumar posicion con el arreglo2 
+        //y guardarlo en la variable arregloSu
+        for (let i = 0; i < arreglo1.length; i++) {
+            let suma = arreglo1[i] + arreglo2[i];
+            arregloSu.push(suma);
+        }
+
+        //Imprimimos el arreglo resultante
+        for (let i = 0; i < arregloSu.length; i++) {
+            document.write(arregloSu[i] + "-");
+        }
+
+    </script>
+
+</body>
+
+</html>
