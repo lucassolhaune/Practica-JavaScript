@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notasA = [1,5,7,8,5,4];
+        let notasB = [2,2,4,7,6,9,8,6,5];
+        let suma1 = 0;
+        for(let i = 0; i <notasA.length; i ++){
+            suma1 = suma1 + notasA[i];
+        }
+        let suma2 = 0;
+        for(let f = 0; f < notasB.length; f ++){
+            suma2 = suma2 + notasB[f];
+        }
+        const promedioA = suma1/notasA.length; //me devuelve el promedio de las notas A
+        const promedioB = suma2/notasB.length;//me devuelve el promedio de las notas B
+        document.write("Promedio del grupo mañana: "+promedioA+ "<br>");
+        document.write("Promedio del grupo tarde: "+promedioB+"<br>");
+
+        if(promedioA > promedioB){
+            document.write("El curso A tien eun promedio mayor al grupo B");
+        }else{
+            if(promedioB > promedioA){
+                document.write("El curso B tiene mayor promedio que el curso A");
+            }else{
+                document.write("Los dos cursos tienen el mismo promedio.");
+            }
+        }
+
+
+    </script>
+</body>
+</html>
