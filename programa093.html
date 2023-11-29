@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombres = ["Juan", "Ana", "Marcos", "Pablo", "Laura"];
+        let edades = [12, 21, 27, 14, 21];
+
+        for(let i = 0; i < nombres.length; i++){
+            document.write(nombres[i]+ "-"+edades[i]+"<br>");
+        }
+        document.write("<hr>")
+        document.write("Personas mayores de edad:"+"<br>");
+        for(let i = 0; i < edades.length; i++){
+            if(edades[i] >= 18){
+                document.write(nombres[i]+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
