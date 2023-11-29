@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombres = [];
+        let sueldos = [];
+
+        for (let i = 0; i < 4; i ++){
+            let nom = prompt("Ingrese el nombre del empleado: ");
+            nombres.push(nom);
+            let su = parseFloat(prompt("Ingrese el sueldo: "));
+            sueldos.push(su);
+        }
+        
+        let nom = prompt("Ingrese el nombre de algun empleado para consultar su sueldo:")
+        let existe = false;
+        for(let i = 0; i < nombres.length; i ++){
+            if(nom == nombres[i]){
+                document.write("El empleado "+nom+" tiene un sueldo "+sueldos[i]);
+                existe = true;
+                break;
+            }
+        }
+        if(existe == false){
+            document.write("No exixste un emplado con dicho nombre")
+        }
+
+
+
+    </script>
+</body>
+</html>
