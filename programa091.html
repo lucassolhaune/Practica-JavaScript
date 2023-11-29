@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array1 = [];
+        for(let i = 0; i < 6; i ++){
+            let elemento = parseInt(prompt("Ingrese un valor: "))
+            array1.push (elemento); 
+        }
+        for(let i = 0; i < array1.length; i++){
+            document.write(array1[i] +"-");
+        }
+        document.write("-");
+
+        /*Voy recorriendo el array preguntadole al numero siguiente si es mayor,
+         si la condicion es verdadera sigo recorriendo el array ordenandolo de 
+         mayor a menor, sino me devuelve que la condicion es falsa.
+        */
+        let ordenado = true;
+        for(let i = 0; i < array1.length-1; i ++){
+            if(array1[i] > array1[i+1]){
+                ordenado = false;      
+                break; //finaliza la estructura repetitiva que la contiene.        
+            }
+        }
+        if(ordenado){
+            document.write("El aray esta ordenado");
+        }else{
+            document.write("El array no esta ordenado");
+        }
+    </script>
+</body>
+</html>
