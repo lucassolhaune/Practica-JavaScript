@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Cuantos operarios tiene la empresa: "));
+        let sueldos = [];
+
+        for(let i = 0; i < n; i ++){
+            let sueldo = parseFloat(prompt("Ingrese sueldo:"));
+            sueldos.push(sueldo);//Se ingresan los sueldos
+        }
+
+        let suma = 0;
+        for(let i = 0; i <sueldos.length; i ++){
+            document.write(sueldos[i]+ "<br>");
+            suma = suma+sueldos[i];
+        }
+        const promedio = suma/sueldos.length;
+        document.write("Gastos en sueldos: "+suma+"<br>");
+        document.write("Sueldos promedio: "+promedio)
+    </script>
+</body>
+</html>
