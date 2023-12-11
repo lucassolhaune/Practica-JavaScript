@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ejercicio donde ordeno el numero mas grande en un auxiliar al final del array
+        //Este algoritmo no ordena el array, solo el numero mas grande.
+        let sueldos = [1200, 750, 820, 550, 490];
+        
+        for(let i = 0; i < 4; i ++){
+            sueldos[i] > sueldos[i+1];
+            let aux = sueldos[i];
+            sueldos[i] = sueldos [i + 1];
+            sueldos[i + 1] = aux;
+        }
+        for(let i = 0; i < sueldos.length; i ++){
+            document.write(sueldos[i]+"-");
+        }
+    </script>
+</body>
+</html>
