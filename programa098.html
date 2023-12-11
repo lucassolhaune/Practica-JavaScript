@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let paises = ["Paraguay", "Brasil", "España", "Chile", "Honduras"];
+        
+        for(let i = 0; i < paises.length; i ++){
+            document.write(paises[i]+ "-");
+        }
+        
+        document.write("<br>");
+        //Ordenamiento del array de forma alfabetica, algoritmo burbuja.
+        for(let k = 0; k < paises.length -1; k ++){
+        for(let i = 0; i < paises.length - 1 - k; i ++){
+                if(paises[i] > paises [i + 1]){
+                    let pais = paises[i];
+                    paises[i] = paises [i + 1];
+                    paises[i + 1] = pais;
+                }
+            }  
+        }
+            
+            for(let i = 0; i < paises.length; i ++){
+            document.write(paises[i]+ "-");
+        }
+
+
+    </script>
+</body>
+</html>
