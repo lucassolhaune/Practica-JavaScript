@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let sueldos = [1200, 750, 820, 550, 490];
+
+        for (let i = 0; i < sueldos.length; i++) {
+            document.write(sueldos[i] + "-");
+        }
+        document.write("<br>");
+
+        //Ordenamos el vector de menor a mayor
+
+        for(let k = 0; k < sueldos.length; k ++){
+        let menor =sueldos[k];
+        let posicion = k;
+        
+        for(let i = k + 1; i < sueldos.length; i ++){
+           
+            if(sueldos[i] < menor){
+                menor = sueldos[i];
+                posicion = i;
+            }
+        }
+        let aux = sueldos[k];
+        sueldos[k] = sueldos[posicion];
+        sueldos[posicion] = aux;
+    }
+        for(let i = 0; i < sueldos.length; i ++){
+            document.write(sueldos[i]+ "-");
+        }
+    </script>
+</body>
+
+</html>
