@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let paises = ["Argentina", "Chile", "Paraguay", "Colombia"];
+        let habitantes = ["45_000_000", "19_000_000", "7_000_000", "50_000_000"];
+        //Metodo burbuja
+        for (let k = 0; k < paises.length - 1; k++) { // Ordenamiento aflabeticamente
+            for (let i = 0; i < paises.length - 1 - k; i++) { // Ordenamiento de habitantes de menor a mayor
+
+                if (paises[i] > paises[i + 1]) {    //Vamos preguntando si el elemento es mayor al siguiente.
+                    let auxPais = paises[i];      //El resultdo lo guardamos en una variable auxiliar.
+                    paises[i] = paises[i + 1];    // Guardo el siguiente.
+                    paises[i + 1] = auxPais;
+
+                    let auxHabitante = habitantes[i];
+                    habitantes[i] = habitantes[i + 1];
+                    habitantes[i + 1] = auxHabitante;
+
+                }
+            }
+        }
+        document.write("Ordenado alfabeticamente: <br>")
+
+        for (let i = 0; i < paises.length; i++) {
+            document.write(paises[i] + "-" + habitantes[i] + "<br>");
+        }
+        //Es el mismo algoritmo para los habitantes
+
+        for (let k = 0; k < paises.length - 1; k++) { // Ordenamiento aflabeticamente
+            for (let i = 0; i < paises.length - 1 - k; i++) { // Ordenamiento de habitantes de menor a mayor
+
+                if (habitantes[i] > habitantes[i + 1]) {    //Vamos preguntando si el elemento es mayor al siguiente.
+                    let auxPais = paises[i];      //El resultdo lo guardamos en una variable auxiliar.
+                    paises[i] = paises[i + 1];    // Guardo el siguiente.
+                    paises[i + 1] = auxPais;
+
+                    let auxHabitante = habitantes[i];
+                    habitantes[i] = habitantes[i + 1];
+                    habitantes[i + 1] = auxHabitante;
+
+                }
+            }
+        }
+        document.write("<hr>")
+        document.write("Ordenado por cantidad de habitantes <br>")
+        for (let i = 0; i < paises.length; i++) {
+            document.write(paises[i] + "-" + habitantes[i] + "<br>");
+        }
+    </script>
+</body>
+
+</html>
