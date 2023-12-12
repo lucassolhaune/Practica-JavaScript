@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let clubes  = [["River",15], ["Boca",12], ["Belgrano", 17], ["Talleres", 14]];
+
+        for(let k = 0; k < clubes.length - 1; k ++){
+            for( let f = 0; f < clubes.length - 1 - k; f ++ ){
+                if(clubes[f][1] < clubes[f+1][1]){
+                    let aux = clubes[f];
+                    clubes[f] = clubes[f+1];
+                    clubes[f+1] = aux;
+                }
+            }
+        }
+        for(let f = 0; f < clubes.length; f ++){
+            document.write(clubes[f][0]+ " - "+ clubes[f][1]+ "<br>");
+        }
+    </script>
+</body>
+</html>
