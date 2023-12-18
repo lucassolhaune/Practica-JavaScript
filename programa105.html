@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [];
+        let cant1 = parseInt(prompt("Cantidad de elementos del arreglo principal: "));
+        for(let i = 0; i < cant1; i ++){
+            array.push([]);
+            let cant2 = parseInt(prompt("Ingrese la cantidad de elementos del arreglo anidado:"));
+            for(let j = 0; j < cant2; j ++){
+                let elemento = parseInt(prompt("Ingrese el elemento: "));
+                array[i].push(elemento);
+            }
+        }
+        for(let i = 0; i < array.length; i ++){
+            for(let j = 0; j < array[i].length; j ++){
+                document.write(array[i][j]+ " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
