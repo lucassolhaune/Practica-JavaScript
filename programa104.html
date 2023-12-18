@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let array1 = [[1, 1, 1, 1], [2, 2, 2, 2]];
+        let suma1 = array1[0][0] + array1[0][1] + array1[0][2] + array1[0][3];
+        let suma2 = array1[1][0] + array1[1][1] + array1[1][2] + array1[1][3];
+        document.write(suma1 + " - " + suma2 + "<br>");
+
+        suma1 = 0;
+        for (let i = 0; i < array1[0].length; i++) {
+            suma1 = suma1 + array1[0][i];
+        }
+        suma2 = 0;
+        for (let i = 0; i < array1[1].length; i++) {
+            suma2 = suma2 + array1[1][i];
+        }
+        document.write(suma1 + " - " + suma2 + "<br>");
+
+        for (let k = 0; k < array1.length; k ++){
+            let suma = 0;
+            for(let f = 0 ; f < array1[k].length; f++){
+                suma = suma + array1[k][f];
+            }
+            document.write(suma + " - ");
+        }
+
+    </script>
+</body>
+
+</html>
