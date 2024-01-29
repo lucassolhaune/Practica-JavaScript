@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = []
+        let filas = 3+Math.floor(Math.random()*8) //Cantidad de elemento que va a tener
+        for(let i = 0; i< filas; i ++){
+            array.push([])
+            let elementos = 1 + Math.floor(Math.random()*10)
+            for(let j = 0; j < elementos; j ++){
+                let valor = 1 + Math.floor(Math.random() * 100)
+                array[i].push(valor)
+            }
+        }
+        for(let i = 0; i < array.length; i ++){
+            for(let j = 0; j < array[i].length; j ++){
+                document.write(array[i][j]+ " ")
+            }
+            document.write("<br>")
+        }
+        document.write("<hr>")
+        document.write(array[0][0])
+        document.write("<br>")
+        document.write(array[0][array[0].length - 1])
+        document.write("<br>")
+        document.write(array [array.length - 1][0])
+        document.write("<br>")
+        document.write(array[array.length - 1][array[array.length-1].length - 1])
+
+
+    </script>
+</body>
+</html>

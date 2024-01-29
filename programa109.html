@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [];
+        let cantidad = parseInt(prompt("Cuantos elementos contendra el array: "));
+        for(let i = 0; i < cantidad; i ++){
+            array.push(parseInt(prompt("Ingese el elemento >>:")))
+        }
+        for( let elemento of array){
+            document.write(elemento + " ");
+        }
+        document.write("<hr>");
+        let mayor = array[0];
+        for(let elemento of array){
+            if(elemento > mayor){
+                mayor = elemento;
+            }
+        }
+        document.write("Elemento mayor"+mayor+"<br>");
+    </script>
+</body>
+</html>
