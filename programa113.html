@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arreglo = []
+    let cantidad = parseInt(prompt("Cuantos elementos quiere almacenar: "))
+    for(let i = 0; i < cantidad; i ++){
+        arreglo.push(parseInt(prompt("Ingrese el elemento: ")))
+    }
+    for (let elemento of arreglo){
+        document.write(elemento+ " ")
+    }
+    document.write("<hr>")
+    let mayor = arreglo[0]
+    for(let elemento of arreglo){
+        if(elemento > mayor){
+            mayor = elemento
+        }
+    }
+    document.write("Elemento mayor "+ mayor + "<hr>")
+
+    let arreglo1 = []
+    let arreglo2 = []
+
+    for(let elemento of arreglo){
+        if(elemento < 10){
+            arreglo1.push(elemento)
+        }else{
+            arreglo2.push(elemento)
+        }
+    }
+    for(let elemento of arreglo1){
+        document.write(elemento + " ")
+    }
+    document.write("<hr>")
+    
+    for(let elemento of arreglo2){
+        document.write(elemento + " ")
+    }
+
+</script>
+</body>
+</html>
