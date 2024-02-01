@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function presntacion (){
+            alert("Bienvenido al programa que permite sumar 2 valores")
+        }
+        function sumarValor(){
+            const valor1 = parseInt(prompt("Ingrese el primer valor: "))
+            const valor2 = parseInt(prompt("Ingrese el segundo valor: "))
+            suma = valor1 + valor2
+            document.write("La suma de los dos valores es: "+suma+"<br>")
+        }
+        function finalizacion(){
+            document.write("********************************<br>")
+            document.write("Gracias por utilizar el programa <br>")
+        }
+
+        presntacion()
+        sumarValor()
+        finalizacion()
+    </script>
+</body>
+</html>

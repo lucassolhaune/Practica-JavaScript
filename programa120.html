@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ingresaNumero(){
+            let numero = parseInt(prompt("Ingrese un numero: "))
+            if(numero > 0){
+                alert("El numero es positivo")
+            }else{
+                if(numero < 0){
+                    alert("El numero es negativo")
+                }else{
+                    alert("El numero es nulo")
+                }
+            }
+        }
+        function productoValores(){
+            let num1 = parseInt(prompt("Ingrese el primer numero: "))
+            let num2 = parseInt(prompt("Ingrese el segundo numero: "))
+            producto = num1 * num2
+            document.write("El resultado de la multiplicacion es: "+ producto)
+        }
+        ingresaNumero()
+        productoValores()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculoCuadrado(){
+            let numero = parseInt(prompt("Ingrese un numero: "))
+            let cuadrado = numero ** 2
+            document.write("El cuadrado del numero ingresado es: "+cuadrado+"<br>")
+        }
+        function lineaSeparadora(){
+            document.write("*******************************************<br>")
+        }
+        for(let i = 1; i <= 3; i ++){
+        calculoCuadrado()
+        lineaSeparadora()
+        }
+    </script>
+</body>
+</html>
