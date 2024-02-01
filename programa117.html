@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cartas = [[2, "Espada"], [3, "Basto"], [4, "Oro"],[5, "Copa"]]
+        let espada = 0
+        let basto = 0
+        let oro = 0
+        let copa = 0
+        for(let carta of cartas){
+            document.write(carta[0]+ " "+ carta[1]+ "<br>")
+            switch (carta[1]){
+                case "Espada": espada ++
+                    break
+                case "Basto": basto ++
+                    break
+                case "Oro": oro++
+                    break
+                case "Copa": copa++
+                    break
+            }
+        }
+        document.write("Espada: "+ Espada + "<br>")
+        document.write("Basto: "+ basto + "<br>")
+        document.write("Oro: "+ oro + "<br>")
+        document.write("Copa: "+ copa + "<br>")
+    
+    </script>
+</body>
+</html>
