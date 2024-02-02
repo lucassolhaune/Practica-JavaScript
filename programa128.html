@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cargar(array){
+            for(let i = 0; i < 5; i ++){
+                let valor = parseInt(prompt("Ingrese valor: "))
+                array.push(valor)
+            }
+        }
+        function imprimir(array){
+            for(let i = 0; i < array.length; i ++){
+                document.write(array[i]+ " ")
+            }
+            document.write("<br>")
+        }
+        let array1 = []
+        cargar(array1)
+        imprimir(array1)
+    </script>
+</body>
+</html>
