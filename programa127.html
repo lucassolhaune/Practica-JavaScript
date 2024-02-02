@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarTabla(nro){
+            document.write("Tabla del "+nro+"<br>")
+            for(let i = 1; i <= 100; i ++){
+                let resultado = i * nro //ej: 1*5, 2*5, 3*5...... "tabla del 5"
+                document.write(nro+ "*"+i+"="+resultado+"<br>")
+            }
+            document.write("<hr>")
+        }
+        for(let i = 2; i <= 100; i ++){
+            mostrarTabla(i)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarMensaje(mensaje){
+            document.write("************************<br>")
+            document.write(mensaje+"<br>")
+            document.write("************************<br>")
+        }
+        function cargarSumar(){
+            let valor1 = parseInt(prompt("Ingrese el primer valor"))
+            let valor2 = parseInt(prompt("Ingrese el segundo valor"))
+            suma = valor1 + valor2
+            document.write("La suma es: "+ suma)
+        }
+        
+        mostrarMensaje("El programa calcula la suma de dos valores ingresados por teclado")
+        cargarSumar()
+        mostrarMensaje("Gracias por utulizar este programa")
+    </script>
+</body>
+</html>

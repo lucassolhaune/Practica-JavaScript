@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ordenarImprimir(v1, v2, v3){
+            if(v1 < v2 && v1 < v3){
+                document.write(v1 +" ")
+                if(v2 < v3){
+                   document.write(v2 +""+v3) 
+                }else{
+                    document.write(v3 +" "+ v2)
+                }
+            }else{
+                if(v2 < v3){
+                    document.write(v2 + " ")
+                    if(v1 < v3){
+                        document.write(v1+ " "+ v3)
+                    }else{
+                        document.write(v3+ " "+v1)
+                    }
+                }else{
+                    document.write(v3+" ")
+                    if(v1 < v2){
+                        document.write(v1+ " "+v2)
+                    }else{
+                        document.write(v2+" "+v1)
+                    }
+                }
+            }
+        }
+        function cargar(){
+            let valor1 = parseInt(prompt("Ingrese el primer valor: "))
+            let valor2 = parseInt(prompt("Ingrese el segundo valor: "))
+            let valor3 = parseInt(prompt("Ingrese el tercer valor: "))
+            ordenarImprimir(valor1, valor2, valor3)
+        }
+        cargar()
+    </script>
+</body>
+</html>

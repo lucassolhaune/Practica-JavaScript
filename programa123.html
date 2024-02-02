@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarMayor(v1, v2, v3){
+            document.write("El mayor es: ")
+            if(v1 > v2 && v1 > v3){
+                document.write(v1)
+            }else{
+                if(v2 > v1 && v2 > v3){
+                    document.write(v2)
+                }else{
+                    document.write(v3)
+                }
+            }
+        }
+        function cargarValores(){
+            let valor1 = parseInt(prompt("Ingrese el primer valor: "))
+            let valor2 = parseInt(prompt("Ingrese el segundo valor: "))
+            let valor3 = parseInt(prompt("Ingrese el tercer valor: "))
+            mostrarMayor(valor1,valor2,valor3)
+        }
+        
+        cargarValores()
+        
+    </script>
+</body>
+</html>

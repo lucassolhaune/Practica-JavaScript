@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarPerimetro(lado){
+            let perimetro = lado * 4
+            document.write("El perimetro es: "+ perimetro+ "<br>")
+        }
+        function mostrarSuperficie(lado){
+            let superficie = lado * lado
+            document.write("La superficie es: "+superficie+ "<br>")
+        }
+        function cargarDato(){
+            let lado = parseInt(prompt("Ingrese el valor del lado de un cuadrado: "))
+            let resp = prompt("Quiere calcular el perimetro o la superficie [perimetro/superficie]")
+            if(resp == "perimetro"){
+                mostrarPerimetro(lado)
+            }else{
+                if(resp == "superficie")
+                mostrarSuperficie(lado)
+            }
+        }
+        cargarDato()
+    </script>
+</body>
+</html>

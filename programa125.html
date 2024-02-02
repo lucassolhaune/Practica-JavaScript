@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cantidadVocales(palabra){
+            let cantidad = 0
+            for(let letra of palabra){
+                if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+                    cantidad ++
+                }
+            }
+            document.write("La cantidad de vocales de la palabra "+palabra+" es: "+cantidad+ "<br>")
+        }
+        cantidadVocales("hola")
+        cantidadVocales("programacion")
+        cantidadVocales("mundo")
+    </script>
+</body>
+</html>
