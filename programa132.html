@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function returnArray(){
+            let array = []
+            for(let i = 0; i < 5; i ++){
+                const valor = parseInt(prompt("Ingrese un numero: "))
+                array.push(valor) // Llena el array con los numeros que ingresamos
+            }
+            return array
+        }
+        
+        function mostrarArray(array){
+            for(let i = 0; i < array.length; i ++){
+                document.write(array[i]+ "-") //Muestra todos los elementos del array
+            }
+            document.write("<br>")
+        
+        }
+
+        function sumElement (array){
+            let suma = 0
+            for(let i = 0; i < array.length; i ++){
+                suma = suma + array[i]
+            }
+            return suma
+        }
+        
+        let array1 = returnArray()
+        mostrarArray(array1) //Imprime el array1
+        const s = sumElement(array1) //Imprme la funcion sumElemt, que devuelve la suma de todos los elementos del array
+        document.write("La suma de sus elementos es: "+s+"<br>")
+    
+    </script>
+</body>
+</html>
