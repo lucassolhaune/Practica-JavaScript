@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function esMayor (num1, num2){
+            if(num1 > num2){
+                return num1 //Si el num1 es mayor devuelve el valor del numero 1
+            }else{
+                return num2 //Si el num2 es mayor devuelve el valor del numero 2
+            }
+        }
+        const num1 = parseInt(prompt("Ingrese el primer numero:"))
+        const num2 = parseInt(prompt("Ingrese el segundo numero:"))
+
+        document.write("El numero mayor entre los numeros "+num1+" y "+num2+" es: "+esMayor(num1,num2))
+
+        const result = esMayor (num1, num2) **2
+        document.write("<hr>")
+        document.write("El numero mayor elevado al cuadrado da: "+ result)
+
+    </script>
+</body>
+</html>
