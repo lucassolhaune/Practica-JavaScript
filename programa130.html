@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function returnSup (lado){
+            const superficie = lado * lado
+            return superficie
+        }
+
+        const cuadrado1 = returnSup(5)
+        document.write("La superfiice del cuadrado de lado 5 es "+cuadrado1+"<br>")
+
+        const cuadrado2 = returnSup(10)
+        document.write("La superfiice del cuadrado de lado 5 es "+cuadrado2+"<br>")
+
+        //Otra forma de invocar la funcion
+        document.write("La superficie del cuadrado del lado 15 es"+returnSup(15))
+
+
+    </script>
+    
+</body>
+</html>
